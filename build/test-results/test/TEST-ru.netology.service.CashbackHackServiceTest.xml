@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.netology.service.CashbackHackServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-02-10T07:32:46" hostname="GRIBANOV-PC" time="0.037">
+  <properties/>
+  <testcase name="remain()" classname="ru.netology.service.CashbackHackServiceTest" time="0.029"/>
+  <testcase name="boundaryValuesMax()" classname="ru.netology.service.CashbackHackServiceTest" time="0.002"/>
+  <testcase name="boundaryValuesMin()" classname="ru.netology.service.CashbackHackServiceTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
