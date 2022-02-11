@@ -1,10 +1,11 @@
 package ru.netology.service;
 
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.testng.Assert.assertEquals;
 
-class CashbackHackServiceTest {
+
+public class CashbackHackServiceTest {
     private CashbackHackService service = new CashbackHackService();
 
     @Test
@@ -12,22 +13,22 @@ class CashbackHackServiceTest {
 
         int actual = service.remain(900);
 
-        assertEquals(100,actual);
+        assertEquals(actual, 100);
     }
 
     @Test
-    void boundaryValuesMax() {
+    void shouldCalculateBoundaryValuesMin() {
 
-        int actual = service.remain(10000);
+        int actual = service.remain(1999);
 
-        assertEquals(1000,actual);
+        assertEquals(actual, 1);
     }
 
     @Test
-    void boundaryValuesMin() {
+    void shouldCalculateBoundaryValuesMax() {
 
-        int actual = service.remain(0);
+        int actual = service.remain(2000);
 
-        assertEquals(1000,actual);
+        assertEquals(actual, 1000);
     }
 }
