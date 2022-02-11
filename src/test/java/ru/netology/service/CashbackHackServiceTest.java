@@ -27,9 +27,9 @@ public class CashbackHackServiceTest {
     @Test
     void shouldCalculateMaxRemain() {
 
-        int actual = service.remain(2000);
+        int actual = service.remain(2001);
 
-        assertEquals(actual, 1000);
+        assertEquals(actual, 999);
     }
 
     @Test
