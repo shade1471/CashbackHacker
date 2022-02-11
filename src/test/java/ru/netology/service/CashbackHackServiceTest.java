@@ -17,7 +17,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldCalculateBoundaryValuesMin() {
+    void shouldCalculateMinRemain() {
 
         int actual = service.remain(1999);
 
@@ -25,10 +25,18 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldCalculateBoundaryValuesMax() {
+    void shouldCalculateMaxRemain() {
 
         int actual = service.remain(2000);
 
         assertEquals(actual, 1000);
+    }
+
+    @Test
+    public void shouldCalculateBoundaryValues() {
+
+        int actual = service.remain(1000);
+
+        assertEquals(actual, 0);
     }
 }
