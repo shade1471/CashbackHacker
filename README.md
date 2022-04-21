@@ -1,4 +1,4 @@
-Задача 1
+Задачи 1 и 2
 
 # CashbackHacker
 
